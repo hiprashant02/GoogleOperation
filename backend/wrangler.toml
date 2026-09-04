@@ -1,0 +1,16 @@
+name = "google-operation-backend"
+main = "src/index.ts"
+compatibility_date = "2024-12-30"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+B2_BUCKET_NAME = "YOUR_B2_BUCKET_NAME"
+B2_KEY_ID = "YOUR_B2_KEY_ID"
+B2_KEY_NAME = "YOUR_B2_KEY_NAME"
+B2_APPLICATION_KEY = "YOUR_B2_APPLICATION_KEY"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "operation-d1-db"
+database_id = "YOUR_D1_DATABASE_ID"
+

@@ -1,0 +1,20 @@
+{
+  "name": "google-operation-backend",
+  "version": "1.0.0",
+  "description": "Tactical Personnel Telemetry & Safety Backend on Cloudflare Workers and D1",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute operation-d1-db --local --file=./schema.sql",
+    "db:init:remote": "wrangler d1 execute operation-d1-db --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241230.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.112.0"
+  }
+}
